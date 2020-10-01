@@ -1,8 +1,7 @@
 <?php require_once("includes/dbcon.php"); ?>
 <?php require_once("includes/functions.php"); ?>
 <?php find_selected_page(); ?>
-<?php #$query="Select * from userad where cat_id='$sel_page[id]' ";
-#$userad=mysql_query($query);
+<?php 
 
 $query="Select * from postad where category='$sel_page[cat_id]' ";
 $freead=mysqli_query($con,$query);
@@ -15,7 +14,7 @@ $freead=mysqli_query($con,$query);
     <title>Ads </title>
 	<link href="_css/homepage.css" rel="stylesheet" type="text/css"/>
 	<link href="_css/header.css" rel="stylesheet" type="text/css">
-	<link  href="_css/foot.css" rel="stylesheet" type="text/css">
+	
 	
 	
 </head>
@@ -47,18 +46,7 @@ $b=1;
     <td colspan="2" class="adtitle">Title: <span style="color:#666;"><?php echo $rec['title']; ?></span></td>
     
   </tr>
-  <tr>
-    <td rowspan="3" id="adpic"><img src="Uploadphotos/<?php echo ucwords($rec['image']);?>"
-     style="border-radius:15px; max-height:300px; padding:7px; -webkit-box-shadow:  0px 0px 5px 1px #FFD57D;
-        
-        box-shadow:  0px 0px 5px 1px #FFD57D; "/></td>
-    
-    <td class="adbg" ><span style="color:#666;"><?php echo $rec['price']; ?></span><br/>Price </td>
-    </tr>
-    <tr>
-    <td  class="adbg"> <span style="color:#666;"><?php echo $rec['contactno']; ?></span><br/>Contact name</td>
-   
-  </tr>
+  
   <tr>
     <td  class="adbg"><span style="color:#666;"><?php echo $rec['username']; ?></span><br/>Mobile number</td>
    
