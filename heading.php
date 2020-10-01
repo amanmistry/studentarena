@@ -47,7 +47,7 @@
 <body>
 	<div class="heading" >
 
-		
+		<!-- showing data from server-->
       <?php
 		$subject_set = get_all_subjects();
 		while ($subject = mysql_fetch_array($subject_set)) {
