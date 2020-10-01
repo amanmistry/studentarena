@@ -32,6 +32,7 @@ $freead=mysqli_query($con,$query);
 <?php
 
 $total_recs=mysqli_num_rows($freead);
+	// checking condition for free user
 	if($total_recs == 0)
 	 { 
 	 	echo "sorry nothing is posted from free users in this category";	
