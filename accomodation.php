@@ -7,18 +7,18 @@
 <table>
 	<tr>
 		<!--<td>r_id</td>-->
-		<td>title</td>
-		<td>category</td>
-		<td>description</td>
-		<td>image</td>
-		<td>price</td>
-		<td>year</td>
-		<td>field</td>
-		<td>weblink</td>
-		<td>accommodation</td>
-		<td>username</td>
-		<td>contactno</td>
-		<td>area</td>
+		<td>Title</td>
+		<td>Category</td>
+		<td>Description</td>
+		<td>Image</td>
+		<td>Price</td>
+		<td>Year</td>
+		<td>Field</td>
+		<td>Weblink</td>
+		<td>Accommodation</td>
+		<td>Username</td>
+		<td>Contactno</td>
+		<td>Area</td>
 	</tr>
 </table>
 	<br><br>
