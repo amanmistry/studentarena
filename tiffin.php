@@ -10,8 +10,8 @@
 		<td>title</td>
 		<td>category</td>
 		<td>description</td>
-		<td>image</td>
-		<td>price</td>
+		<td>image..</td>
+		<td>price..</td>
 		<td>year</td>
 		<td>field</td>
 		<td>weblink</td>

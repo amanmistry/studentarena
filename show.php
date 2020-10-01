@@ -3,7 +3,7 @@
 <?php find_selected_page(); ?>
 <?php 
 
-$query="Select * from postad where category='$sel_page[cat_id]' ";
+$query="Select * from postad where category='$sel_page[cat_id] sort by' ";
 $freead=mysqli_query($con,$query);
 ?>
 
@@ -23,7 +23,7 @@ $freead=mysqli_query($con,$query);
 <?php #include("includes/header.html"); ?>
 <div id="cat">
 <div id="topheading">
-<p>Ads found in these category.</p>
+<p>Ads found in the category.</p>
 </div>
 
 
@@ -32,8 +32,12 @@ $freead=mysqli_query($con,$query);
 <?php
 
 $total_recs=mysqli_num_rows($freead);
+
+	if($total_recs === 0)
+
 	// checking condition for free user
 	if($total_recs == 0)
+
 	 { 
 	 	echo "sorry nothing is posted from free users in this category";	
 		exit;	
@@ -59,13 +63,13 @@ $b=1;
     <td  class="adbg" colspan="2">Description:<br/><span style="color:#666;"><?php echo $rec['area']; ?></span><br/></td>
    </tr>
    <tr>
-    <td  class="adbg" colspan="2">Description:<br/><span style="color:#666;"><?php echo $rec['year']; ?></span><br/></td>
+    <td  class="adbg" colspan="2">Description:<br/><span style="color:#99;"><?php echo $rec['year']; ?></span><br/></td>
    </tr>
    <tr>
     <td  class="adbg" colspan="2">Description:<br/><span style="color:#666;"><?php echo $rec['field']; ?></span><br/></td>
    </tr>
    <tr>
-    <td  class="adbg" colspan="2">Description:<br/><span style="color:#666;"><?php echo $rec['weblink']; ?></span><br/></td>
+    <td  class="adbg" colspan="2">Description:<br/><span style="color:#996;"><?php echo $rec['weblink']; ?></span><br/></td>
    </tr>
    <tr>
     <td  class="adbg" colspan="2">Description:<br/><span style="color:#666;"><?php echo $rec['accommodation']; ?></span><br/></td>
@@ -79,9 +83,9 @@ $b=1;
 
 </div>
 
-<?php #include("includes/ender.php"); ?>
+<?php #include("includes/heder.php"); ?>
 <!--<div class="demo-description">
-<p>A menu with the default configuration, showing how to use a menu with icons.</p>
+<p>My menu</p>
 </div>-->
 </body>
 </html>
