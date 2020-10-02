@@ -25,7 +25,7 @@
 	
 <?php 
 
-include'includes/dbcon.php';
+include'includes/dbcon.php';//Including Database Connectivity File
 
 // $id=$_GET['adid'];
 
@@ -34,7 +34,7 @@ $q="select * from postad where category='Books'";
  $result=mysqli_query($con,$q);
  while ($row=mysqli_fetch_array($result)) {
 	
-
+	//Fetching values from database according to the row index
  	// $r_id=$row['0'];
  	$title=$row['1'];
  	// $cat_id=$row['2'];
