@@ -34,6 +34,7 @@ $q="select * from postad where category='Books'";
  $result=mysqli_query($con,$q);
  while ($row=mysqli_fetch_array($result)) {
 	
+	for ($i=0;i<=len($row),$i++){
 
  	// $r_id=$row['0'];
  	$title=$row['1'];
@@ -49,6 +50,7 @@ $q="select * from postad where category='Books'";
  	$username=$row['10'];
  	$contactno=$row['11'];
  	$area=$row['12'];
+	}
 
 ?>
 <table>
