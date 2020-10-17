@@ -1,6 +1,6 @@
 <?php 
 //start_seesion();
-include 'includes/dbcon.php'; 
+include 'includes/dbcon.php'; //Including header file
 //start_seesion();
 // $category=$_GET['category'];
 ?>
