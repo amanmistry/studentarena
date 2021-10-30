@@ -19,6 +19,7 @@
 		<td>username</td>
 		<td>contactno</td>
 		<td>area</td>
+		<td>area</td>
 	</tr>
 </table>
 	<br><br>
