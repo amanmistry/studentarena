@@ -3,4 +3,3 @@
 we can also provid free delivery services.
 ALL Types of service Completed.
 
-Technology used in this project is html5, css3, php 7 and bootstrap
