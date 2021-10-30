@@ -16,9 +16,9 @@
 		<td>Field</td>
 		<td>Weblink</td>
 		<td>Accommodation</td>
-		<td>Username</td>
+<!-- 		<td>Username</td> -->
 		<td>Contactno</td>
-		<td>Area</td>
+<!-- 		<td>Area</td> -->
 	</tr>
 </table>
 	<br><br>
